@@ -1096,23 +1096,22 @@ const latensie = speed() - timestampe
                 const menulist = `┌─❖
 │「 OLÁ 🥱 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  How Are You? 😄
+┌┤✑  TUDO BEM? BEM VINDO AO MENU DO RANGNAROK 😄
 │└────────────┈ ⳹
 │
 └─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」       
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+│𝐕𝐄𝐋𝐎𝐂𝐈𝐃𝐀𝐃𝐄  : ${latensie.toFixed(4)} miliseconds
+│𝐐𝐔𝐀𝐍𝐓𝐎 𝐓𝐄𝐌𝐏𝐎 𝐋𝐈𝐆𝐀𝐃𝐎 : ${runtime(process.uptime())}
+│𝐍𝐎𝐌𝐄 𝐁𝐎𝐓 : ${global.botname}
+│𝐍𝐎𝐌𝐄 𝐃𝐎 𝐌𝐄𝐔 𝐃𝐎𝐍𝐎 : ${global.ownername}
+│𝐍𝐔𝐌𝐄𝐑𝐎 𝐃𝐎 𝐌𝐄𝐔 𝐃𝐎𝐍𝐎. : ${global.owner}
+│𝐌𝐄𝐔 𝐏𝐈𝐗 𝐏𝐀𝐑𝐀 𝐀𝐋𝐔𝐆𝐀𝐑 𝐎 𝐁𝐎𝐓: 𝐄𝐌 𝐁𝐑𝐄𝐕𝐄
+│𝐏𝐋𝐀𝐓𝐀𝐅𝐎𝐑𝐌𝐀 : ${os.platform()}
+│𝐓𝐎𝐓𝐀𝐋 𝐃𝐄 𝐏𝐄𝐒𝐒𝐎𝐀𝐒 𝐔𝐒𝐀𝐍𝐃𝐎 : ${Object.keys(global.db.data.users).length}
+
 └┬────────────┈ ⳹
-   │✑  Please Select
-   │✑  The Button Below
+   │✑  𝑬𝑺𝑪𝑶𝑳𝑯𝑨 𝑨 𝑶𝑷𝑪𝑨𝑶 𝑸𝑼𝑨𝑰𝑺 𝑽𝑶𝑪𝑬 𝑸𝑼𝑬𝑹 𝑽𝑬𝑹 ↓
+   │✑  𝑵𝑨𝑶 𝑪𝑶𝑳𝑶𝑸𝑼𝑬 𝑶 𝑩𝑶𝑻 𝑬𝑴 𝑮𝑹𝑼𝑷𝑶 𝑺𝑬𝑴 𝑷𝑬𝑹𝑴𝑰𝑺𝑺𝑨𝑶!
    └─────────────┈ ⳹`
    
    //randoming function
@@ -1198,12 +1197,12 @@ const isBane = banUser.includes(orgnye)
 if (args[0] === "add") {
 if (isBane) return ads('User was already banned')
 banUser.push(orgnye)
-replay(`Successfully banned the user`)
+replay(`USUARIO BANIDO COM SUCESSO ✔️`)
 } else if (args[0] === "del") {
 if (!isBane) return ads('User was already unbanned')
 let delbans = banUser.indexOf(orgnye)
 banUser.splice(delbans, 1)
-replay(`Successfully unbanned the user`)
+replay(`USUARIP DESBANIDO COM SUCESSO ✔️`)
 } else {
 replay("Error")
 }
@@ -2262,7 +2261,7 @@ if (isBanChat) return reply(mess.banChat)
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!isCreator) return replay(`${mess.owner}`)
-                if (!text) return replay(`Enter The Group Link!`)
+                if (!text) return replay(`MANDA O LINK DO GRUPO NÉ PO😡`)
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return replay(`Invalid Link!`)
                 reply(mess.wait)
                 let result = args[0].split('https://chat.whatsapp.com/')[1]
@@ -3327,7 +3326,7 @@ id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'DONO 😈',
 id: 'owner'
 }
 }]
@@ -8031,16 +8030,16 @@ let buttonMessage = {
 image: { url: anu.thumbnail },
 caption: `*| YOUTUBE PLAY |*
 
-${global.themeemoji} Title : ${anu.title}
-${global.themeemoji} Ext : Search
+${global.themeemoji} Titulo : ${anu.title}
+${global.themeemoji} Ext : 
 ${global.themeemoji} ID : ${anu.videoId}
-${global.themeemoji} Duration : ${anu.timestamp}
-${global.themeemoji} Viewers : ${anu.views}
-${global.themeemoji} Uploaded : ${anu.ago}
-${global.themeemoji} Author : ${anu.author.name}
-${global.themeemoji} Channel : ${anu.author.url}
-${global.themeemoji} Description : ${anu.description}
-${global.themeemoji} Url : ${anu.url}`,
+${global.themeemoji} Duração : ${anu.timestamp}
+${global.themeemoji} Views : ${anu.views}
+${global.themeemoji} Publicado : ${anu.ago}
+${global.themeemoji} Autor : ${anu.author.name}
+${global.themeemoji} Canal : ${anu.author.url}
+${global.themeemoji} Descrição : ${anu.description}
+${global.themeemoji} LINK : ${anu.url}`,
 footer: `${global.botname}`,
 buttons: buttons,
 headerType: 4,
@@ -8750,7 +8749,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
+teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nDOACOES EM BREVE 🍜`
 let buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu 🌺'}, type: 1}
 ]
