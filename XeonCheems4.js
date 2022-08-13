@@ -8793,7 +8793,9 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'LISTA DE MENU 🍢'.
+
+                                    displayText: 'List Menu 🍢',
+
                                     id: 'command'
                                 }  
                             }, {
