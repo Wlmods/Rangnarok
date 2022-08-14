@@ -2598,20 +2598,20 @@ if (isBanChat) return reply(mess.banChat)
             reply('Successfully Deleted The Vote Session In This Group')
 	    }
             break
-               case 'group': case 'grup': {
+               case 'grupo': case 'grup': {
                	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-                if (args[0] === 'close'){
-                    await XeonBotInc.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`Successful Closing The Group`)).catch((err) => reply(jsonformat(err)))
-                } else if (args[0] === 'open'){
-                    await XeonBotInc.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Successful Opening The Group`)).catch((err) => reply(jsonformat(err)))
+                if (args[0] === 'FECHAR'){
+                    await XeonBotInc.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`GRUPO FECHADO COM SUCESSO, ATÉ DEPOIS AMIGOS✔️🥱`)).catch((err) => reply(jsonformat(err)))
+                } else if (args[0] === 'ABRIR'){
+                    await XeonBotInc.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`GRUPO ABERTO COM SUCESSO, OLÁ AMIGOS✔️🥵`)).catch((err) => reply(jsonformat(err)))
                 } else {
                 let buttons = [
-                        { buttonId: 'group open', buttonText: { displayText: 'Open' }, type: 1 },
-                        { buttonId: 'group close', buttonText: { displayText: 'Close' }, type: 1 }
+                        { buttonId: 'ABRIR GRUPO', buttonText: { displayText: 'ABRIR' }, type: 1 },
+                        { buttonId: 'FECHAR GRUPO', buttonText: { displayText: 'FECHAR' }, type: 1 }
                     ]
                     await XeonBotInc.sendButtonText(m.chat, buttons, `Group Mode`, XeonBotInc.user.name, m)
 
