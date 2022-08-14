@@ -2604,9 +2604,9 @@ if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-                if (args[0] === 'FECHAR'){
+                if (args[0] === 'close'){
                     await XeonBotInc.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`GRUPO FECHADO COM SUCESSO, ATÉ DEPOIS AMIGOS✔️🥱`)).catch((err) => reply(jsonformat(err)))
-                } else if (args[0] === 'ABRIR'){
+                } else if (args[0] === 'open'){
                     await XeonBotInc.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`GRUPO ABERTO COM SUCESSO, OLÁ AMIGOS✔️🥵`)).catch((err) => reply(jsonformat(err)))
                 } else {
                 let buttons = [
