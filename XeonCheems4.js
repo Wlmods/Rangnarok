@@ -2598,7 +2598,7 @@ if (isBanChat) return reply(mess.banChat)
             reply('Successfully Deleted The Vote Session In This Group')
 	    }
             break
-               case 'grupo': case 'grup': {
+               case 'group': case 'grup': {
                	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
@@ -2613,7 +2613,7 @@ if (isBanChat) return reply(mess.banChat)
                         { buttonId: 'ABRIR GRUPO', buttonText: { displayText: 'ABRIR' }, type: 1 },
                         { buttonId: 'FECHAR GRUPO', buttonText: { displayText: 'FECHAR' }, type: 1 }
                     ]
-                    await XeonBotInc.sendButtonText(m.chat, buttons, `Group Mode`, XeonBotInc.user.name, m)
+                    await XeonBotInc.sendButtonText(m.chat, buttons, `OLA MEU ADM GOSTOSO, DESEJA FECHAR OU ABRIR O GRUPO?🥵 \n\n\n\n `, XeonBotInc.user.name, m)
 
              }
             }
