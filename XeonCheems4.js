@@ -2610,8 +2610,8 @@ if (isBanChat) return reply(mess.banChat)
                     await XeonBotInc.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`GRUPO ABERTO COM SUCESSO, OLÁ AMIGOS✔️🥵`)).catch((err) => reply(jsonformat(err)))
                 } else {
                 let buttons = [
-                        { buttonId: 'ABRIR GRUPO', buttonText: { displayText: 'ABRIR' }, type: 1 },
-                        { buttonId: 'FECHAR GRUPO', buttonText: { displayText: 'FECHAR' }, type: 1 }
+                        { buttonId: 'group open', buttonText: { displayText: 'ABRIR' }, type: 1 },
+                        { buttonId: 'group close', buttonText: { displayText: 'FECHAR' }, type: 1 }
                     ]
                     await XeonBotInc.sendButtonText(m.chat, buttons, `OLA MEU ADM GOSTOSO, DESEJA FECHAR OU ABRIR O GRUPO?🥵 \n\n\n\n `, XeonBotInc.user.name, m)
 
