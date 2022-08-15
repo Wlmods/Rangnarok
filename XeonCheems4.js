@@ -3243,7 +3243,7 @@ id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'Dono 😈',
 id: 'owner'
 }
 }]
@@ -3284,7 +3284,7 @@ id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'Dono 😈',
 id: 'owner'
 }
 }]
@@ -8788,20 +8788,20 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'MENU COMPLETO 🍱',
+                                    displayText: 'Menu Completo 🍱',
                                     id: 'allmenu'
                                 }
                             }, {
                                 quickReplyButton: {
 
-                                    displayText: 'List Menu 🍢',
+                                    displayText: 'Lista de Menu 🍢',
 
                                     id: 'command'
                                 }  
                             }, {
                                 quickReplyButton: {
 
-                                    displayText: 'Owner 🤣',
+                                    displayText: 'Dono 🤣',
 
                                     id: 'owner'
                                 }
@@ -8821,9 +8821,9 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                         let buttonmenu = [
         	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
             { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `All Menu 🍱`, id: 'allmenu'} },
-            { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
-            { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
+            { quickReplyButton: { displayText: `MENU COMPLETO 🍱`, id: 'allmenu'} },
+            { quickReplyButton: { displayText: `LISTA DE MENU 🍢`, id: 'command'} },
+            { quickReplyButton: { displayText: `DONO 🤣`, id: 'owner'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
@@ -8840,10 +8840,10 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "Initial Features Of Bot 🦄",
+								"title": "Caracteres Inicias 🦄",
 								"rows": [
 									{
-										"title": "Other ☕",
+										"title": "Outros Comandos ☕",
 										"description": "Displays The List Of Other Features",
 										"rowId": `${prefix}othermenu`
 									}
