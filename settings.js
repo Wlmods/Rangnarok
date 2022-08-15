@@ -61,15 +61,15 @@ global.socialm = "GitHub: WillMods" //ur github or insta name
 global.location = "Brasil, Ceará, Fortaleza" //ur location
 
 //bot bomdy 
-global.owner = ['558588560418']
-global.ownertag = '558588560418' //ur tag number
+global.owner = ['']
+global.ownertag = '' //ur tag number
 global.botname = 'Rangnarokv1' //ur bot name
 global.linkz = "https://youtu.be/uOpLmB4tHhI" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtu.be/uOpLmB4tHhI" //ur website to be displayed
 global.botscript = 'off' //script link
 global.reactmoji = "🔥" //ur menu react emoji
 global.themeemoji = "🔥" //ur theme emoji
-global.packname = "RangnarokBot\n\n+558588560418 \n\n\n\n\n\n\n\n\n🦄🦄🦄 " //ur sticker watermark packname
+global.packname = "RangnarokBot\n\n\n\+558588560418 \n\n\n\🦄🦄🦄 " //ur sticker watermark packname
 global.author = "🦄Rangnarokv1" //ur sticker watermark author
 
 //Bot theme media
