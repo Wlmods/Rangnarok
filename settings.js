@@ -54,23 +54,23 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['5585988560418'] //ur owner number
+global.vcardowner = ['558588560418'] //ur owner number
 global.ownername = "Rangnarokv1" //ur owner name
 global.ytname = "YT: Will" //ur yt chanel name
 global.socialm = "GitHub: WillMods" //ur github or insta name
 global.location = "Brasil, Ceará, Fortaleza" //ur location
 
 //bot bomdy 
-global.owner = ['5585988560418']
-global.ownertag = '5585988560418' //ur tag number
+global.owner = ['558588560418']
+global.ownertag = '558588560418' //ur tag number
 global.botname = 'Rangnarokv1' //ur bot name
 global.linkz = "https://youtu.be/uOpLmB4tHhI" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtu.be/uOpLmB4tHhI" //ur website to be displayed
 global.botscript = 'off' //script link
 global.reactmoji = "🔥" //ur menu react emoji
 global.themeemoji = "🔥" //ur theme emoji
-global.packname = "RangnarokBot\n\n\n\+558588560418 \n\n\n\🦄🦄🦄 " //ur sticker watermark packname
-global.author = "🦄Rangnarokv1" //ur sticker watermark author
+global.packname = "RangnarokBot\n\n\n\+558588560418 \n\n\n\ " //ur sticker watermark packname
+global.author = "Rangnarokv1" //ur sticker watermark author
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
