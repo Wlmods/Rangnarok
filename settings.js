@@ -69,7 +69,7 @@ global.websitex = "https://youtu.be/uOpLmB4tHhI" //ur website to be displayed
 global.botscript = 'off' //script link
 global.reactmoji = "🔥" //ur menu react emoji
 global.themeemoji = "🔥" //ur theme emoji
-global.packname = "RangnarokBot\n\n\n\+558588560418 \n\n\n\ " //ur sticker watermark packname
+global.packname = "RangnarokBot\n\n\n\+558588560418 WILL \n+558888146979 DANKS \n+557398692577 KAYQUE \n\ " //ur sticker watermark packname
 global.author = "Rangnarokv1" //ur sticker watermark author
 
 //Bot theme media
